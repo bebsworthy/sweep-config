@@ -32,6 +32,17 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
