@@ -7,7 +7,7 @@ jobs:
       draw: ${{ steps.changes.outputs.draw }}
       firmware: ${{ steps.changes.outputs.firmware }}
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: dorny/paths-filter@v3
       id: changes
       with:
