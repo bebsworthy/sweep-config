@@ -63,10 +63,21 @@
             >;
         };
 
+/*
+        right_layer {
+            bindings = <
+&kp SLASH      &kp N7             &kp N8        &kp N9        &kp MINUS     &kp F9  &kp F10 &kp F11  &kp F12 &kp CAPSLOCK
+&kp ASTERISK   &ht LALT NUMBER_4  &ht LCTRL N5  &ht LGUI N6   &kp PLUS      &kp F5  &ht RGUI F6  &ht RCTRL F7 &ht RALT F8  &kp DEL
+&kp NUMBER_0   &kp N1             &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp F1  &kp F2  &kp F3   &kp F4  &trans
+&trans        &trans                                                                           &trans  &trans
+            >;
+        };
+*/
+
         right_layer {
             bindings = <
 &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS     &kp INSERT     &kp HOME        &kp UP_ARROW    &kp END          &kp CAPSLOCK
-&kp ASTERISK  &kp NUMBER_4  &kp N5        &kp N6        &kp PLUS      &kp PG_UP      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DEL
+&kp ASTERISK  &ht LALT NUMBER_4  &ht LCTRL N5        &ht LGUI N6        &kp PLUS      &kp PG_UP      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DEL
 &kp NUMBER_0  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp PAGE_DOWN  &kp K_APP       &kp SCROLLLOCK  &trans           &trans
 &trans        &trans                                                                                                 &trans           &trans
             >;
