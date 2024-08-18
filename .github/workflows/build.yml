@@ -40,7 +40,7 @@ jobs:
   svg2png:
     needs: draw
     runs-on: ubuntu-latest
-    permission:
+    permissions:
       contents: write  # allow workflow to commit to the repo
     steps:
       - name: Checkout files
@@ -57,7 +57,7 @@ jobs:
         with:
            commit_message: Automated Change
            file_pattern: keymap-drawer/*.svg
-           
+
 
 
   build:
