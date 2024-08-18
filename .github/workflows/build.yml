@@ -1,5 +1,43 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      draw: ${{ steps.changes.outputs.draw }}
+      firmware: ${{ steps.changes.outputs.firmware }}
+    steps:
+    - uses: actions/checkout@v3
+    - uses: dorny/paths-filter@v2
+      id: changes
+      with:
+        filters: |
+          draw:
+            - 'config/*.keymap'
+            - 'config/*.dtsi'
+            - 'keymap_drawer.config.yaml'
+          firmware:
+            - 'config/**'
+            - 'boards/**'
+            - 'zephyr/**'
+            - 'build.yaml'
+
+  draw:
+    needs: changes
+    if: ${{ needs.changes.outputs.draw == 'true' }}
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write  # allow workflow to commit to the repo
+    with:
+      keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
+      config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
+      output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
+      amend_commit: true
+      fail_on_error: true
+      parse_args: ""  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
+      draw_args: ""   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+
   build:
+    needs: changes
+    if: ${{ needs.changes.outputs.firmware == 'true' }}
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
