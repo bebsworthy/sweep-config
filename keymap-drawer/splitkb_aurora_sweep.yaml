@@ -12,15 +12,15 @@ layers:
   - O
   - P
   - A
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LGUI}
-  - {t: G, h: GLOBE}
-  - {t: H, h: GLOBE}
-  - {t: J, h: RGUI}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RALT}
-  - BSPC
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: G, h: '$$tabler:world$$'}
+  - {t: H, h: '$$tabler:world$$'}
+  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:backspace-outline$$
   - Z
   - X
   - C
@@ -30,38 +30,38 @@ layers:
   - M
   - ','
   - .
-  - ENTER
-  - {t: TAB, h: left}
-  - LSHIFT
-  - SPACE
-  - {t: TAB, h: right}
+  - ⮐
+  - {t: '$$mdi:keyboard-tab$$', h: left}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-tab$$', h: right}
   right:
   - /
   - '7'
   - '8'
   - '9'
   - '-'
-  - INSERT
-  - HOME
-  - UP ARROW
-  - END
-  - CAPSLOCK
+  - Ins
+  - Home
+  - $$mdi:arrow-up$$
+  - End
+  - CapsL
   - '*'
-  - {t: '4', h: LALT}
-  - {t: '5', h: LCTRL}
-  - {t: '6', h: LGUI}
-  - {t: +, h: GLOBE}
-  - PAGE UP
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - DEL
+  - {t: '4', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: +, h: '$$tabler:world$$'}
+  - PgUp
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - $$mdi:backspace-reverse-outline$$
   - '0'
   - '1'
   - '2'
   - '3'
   - .
-  - PAGE DOWN
+  - PgDn
   - APP
   - SCROLLLOCK
   - {t: ▽, type: trans}
@@ -110,32 +110,32 @@ layers:
   - F2
   - F3
   - F4
-  - {t: BT, h: '0'}
-  - {t: BT, h: '2'}
-  - OUT TOG
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
   - {t: ▽, type: trans}
-  - MUTE
-  - NEXT
+  - $$mdi:volume-mute$$
+  - $$mdi:skip-forward$$
   - F5
   - F6
   - F7
   - F8
-  - {t: BT, h: '1'}
-  - {t: BT, h: '3'}
-  - BRI UP
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
+  - $$tabler:brightness-up$$
   - {t: ▽, type: trans}
-  - VOL UP
-  - PP
+  - $$mdi:volume-plus$$
+  - $$mdi:play-pause$$
   - F9
   - F10
   - F11
   - F12
-  - BT CLR
-  - {t: BT, h: '4'}
-  - BRI DEC
+  - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '4', type: sym_sub_text}
+  - $$tabler:brightness-down$$
   - {t: ▽, type: trans}
-  - VOL DN
-  - PREV
+  - $$mdi:volume-minus$$
+  - $$mdi:skip-backward$$
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
