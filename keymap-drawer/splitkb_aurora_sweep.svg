@@ -263,7 +263,6 @@ path.combo {
 
 /* For default styles, see https://github.com/caksoylar/keymap-drawer/blob/main/keymap_drawer/config.py#L85 */
 
-
 svg.keymap {
   font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
   font-size: 12px;
