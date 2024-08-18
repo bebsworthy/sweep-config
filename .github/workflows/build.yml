@@ -15,7 +15,7 @@ jobs:
           draw:
             - 'config/*.keymap'
             - 'config/*.dtsi'
-            - 'keymap_drawer.config.yaml'
+            - 'keymap_drawer_config.yaml'
           firmware:
             - 'config/**'
             - 'boards/**'
