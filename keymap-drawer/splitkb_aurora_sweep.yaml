@@ -1,0 +1,146 @@
+layout: {qmk_keyboard: ferris_rotated}
+layers:
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LGUI}
+  - {t: G, h: GLOBE}
+  - {t: H, h: GLOBE}
+  - {t: J, h: RGUI}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - BSPC
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - ENTER
+  - {t: TAB, h: left}
+  - LSHIFT
+  - SPACE
+  - {t: TAB, h: right}
+  right:
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - INSERT
+  - HOME
+  - UP ARROW
+  - END
+  - CAPSLOCK
+  - '*'
+  - {t: '4', h: LALT}
+  - {t: '5', h: LCTRL}
+  - {t: '6', h: LGUI}
+  - {t: +, h: GLOBE}
+  - PAGE UP
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - DEL
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - PAGE DOWN
+  - APP
+  - SCROLLLOCK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  left:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - '`'
+  - '~'
+  - '"'
+  - '['
+  - '{'
+  - (
+  - {t: ▽, type: trans}
+  - /
+  - '-'
+  - '='
+  - ':'
+  - ;
+  - ''''
+  - ']'
+  - '}'
+  - )
+  - {t: ▽, type: trans}
+  - \
+  - _
+  - +
+  - '|'
+  - '?'
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  tri:
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: BT, h: '0'}
+  - {t: BT, h: '2'}
+  - OUT TOG
+  - {t: ▽, type: trans}
+  - MUTE
+  - NEXT
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: BT, h: '1'}
+  - {t: BT, h: '3'}
+  - BRI UP
+  - {t: ▽, type: trans}
+  - VOL UP
+  - PP
+  - F9
+  - F10
+  - F11
+  - F12
+  - BT CLR
+  - {t: BT, h: '4'}
+  - BRI DEC
+  - {t: ▽, type: trans}
+  - VOL DN
+  - PREV
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+combos:
+- p: [0, 1]
+  k: ESCAPE
+  l: [default]
