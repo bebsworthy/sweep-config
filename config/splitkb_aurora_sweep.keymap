@@ -52,12 +52,14 @@
             bindings = <&tog 2>;
             key-positions = <30 20>;
             timeout-ms = <50>;
+            layers = <0>;
         };
 
         toggle_right {
             bindings = <&tog 1>;
             key-positions = <33 29>;
             timeout-ms = <50>;
+            layers = <0>;
         };
     };
 
