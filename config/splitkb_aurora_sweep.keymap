@@ -43,7 +43,7 @@
         compatible = "zmk,combos";
 
         combo_esc {
-            bindings = <&kp ESCAPE>;
+            bindings = <&escape_layer0>;
             key-positions = <0 1>;
             timeout-ms = <50>;
         };
@@ -67,6 +67,15 @@
         tri_layer {
             if-layers = <RIG LEF>;
             then-layer = <TRI>;
+        };
+    };
+
+    macros {
+        escape_layer0: escape_layer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &to 0>;
+            label = "ESCAPE_LAYER0";
         };
     };
 

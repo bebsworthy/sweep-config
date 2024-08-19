@@ -142,7 +142,7 @@ layers:
   - {type: held}
 combos:
 - p: [0, 1]
-  k: ESCAPE
+  k: '&escape_layer0'
   l: [default]
 - p: [30, 20]
   k: {t: left, h: '$$mdi:toggle-switch$$'}
