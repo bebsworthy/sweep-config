@@ -82,14 +82,14 @@ layers:
   - '`'
   - '~'
   - '"'
-  - '['
-  - '{'
-  - (
-  - <
-  - /
-  - '-'
-  - '='
-  - ':'
+  - {t: '[', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '{', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: (, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: <, h: '$$tabler:world$$'}
+  - {t: /, h: '$$tabler:world$$'}
+  - {t: '-', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '=', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ':', h: '$$mdi:apple-keyboard-option$$'}
   - ;
   - ''''
   - ']'
@@ -113,19 +113,19 @@ layers:
   - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
   - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
-  - {t: default, h: '$$mdi:toggle-switch$$'}
-  - $$mdi:volume-mute$$
   - $$mdi:skip-forward$$
+  - $$mdi:volume-mute$$
+  - {t: default, h: '$$mdi:toggle-switch$$'}
   - F5
-  - F6
-  - F7
-  - F8
-  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
-  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
-  - $$tabler:brightness-up$$
+  - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F7, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F8, h: '$$mdi:apple-keyboard-command$$'}
+  - '&ht GLOBE BT_SEL 1'
+  - '&ht GLOBE BT_SEL 3'
+  - {t: '$$tabler:brightness-up$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:play-pause$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:volume-plus$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: right, h: '$$mdi:toggle-switch$$'}
-  - $$mdi:volume-plus$$
-  - $$mdi:play-pause$$
   - F9
   - F10
   - F11
@@ -133,9 +133,9 @@ layers:
   - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
   - {t: '$$mdi:bluetooth-connect$$', s: '4', type: sym_sub_text}
   - $$tabler:brightness-down$$
-  - {t: left, h: '$$mdi:toggle-switch$$'}
-  - $$mdi:volume-minus$$
   - $$mdi:skip-backward$$
+  - $$mdi:volume-minus$$
+  - {t: left, h: '$$mdi:toggle-switch$$'}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
