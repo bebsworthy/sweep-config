@@ -144,3 +144,7 @@ combos:
 - p: [0, 1]
   k: ESCAPE
   l: [default]
+- p: [30, 20]
+  k: {t: left, h: '$$mdi:toggle-switch$$'}
+- p: [33, 29]
+  k: {t: right, h: '$$mdi:toggle-switch$$'}
