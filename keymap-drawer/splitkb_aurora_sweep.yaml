@@ -120,8 +120,8 @@ layers:
   - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F7, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F8, h: '$$mdi:apple-keyboard-command$$'}
-  - '&ht GLOBE BT_SEL 1'
-  - '&ht GLOBE BT_SEL 3'
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
   - {t: '$$tabler:brightness-up$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:play-pause$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:volume-plus$$', h: '$$mdi:apple-keyboard-option$$'}
