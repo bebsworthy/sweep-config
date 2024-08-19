@@ -29,6 +29,14 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
+        bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -38,17 +46,18 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
         toggle_left {
             bindings = <&tog 2>;
             key-positions = <30 20>;
+            timeout-ms = <50>;
         };
 
         toggle_right {
             bindings = <&tog 1>;
             key-positions = <33 29>;
+            timeout-ms = <50>;
         };
     };
 
@@ -67,7 +76,7 @@
         default_layer {
             bindings = <
 &kp Q        &kp W       &kp E        &kp R       &kp T          &kp Y        &kp U       &kp I        &kp O       &kp P
-&kp A        &ht LALT S  &ht LCTRL D  &ht LGUI F  &ht GLOBE G    &ht GLOBE H  &ht RGUI J  &ht RCTRL K  &ht RALT L  &kp BSPC
+&kp A        &ht LALT S  &ht LCTRL D  &ht LGUI F  &ht GLOBE G    &ht GLOBE H  &ht RGUI J  &ht RCTRL K  &ht RALT L  &bspc_del
 &kp Z        &kp X       &kp C        &kp V       &kp B          &kp N        &kp M       &kp COMMA    &kp DOT     &kp ENTER
 &lt LEF TAB  &kp LSHIFT                                                                                &kp SPACE   &lt RIG TAB
             >;
@@ -76,7 +85,7 @@
         right_layer {
             bindings = <
 &kp SLASH     &kp N7       &kp N8        &kp N9       &kp MINUS         &kp INSERT     &kp HOME        &kp UP_ARROW    &kp END          &kp CAPSLOCK
-&kp ASTERISK  &ht LALT N4  &ht LCTRL N5  &ht LGUI N6  &ht GLOBE PLUS    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DEL
+&kp ASTERISK  &ht LALT N4  &ht LCTRL N5  &ht LGUI N6  &ht GLOBE PLUS    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bspc_del
 &kp N0        &kp N1       &kp N2        &kp N3       &kp PERIOD        &kp PAGE_DOWN  &kp K_APP       &kp SCROLLLOCK  &trans           &trans
 &trans        &trans                                                                                                   &trans           &trans
             >;
