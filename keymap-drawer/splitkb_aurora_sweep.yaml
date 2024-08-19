@@ -113,7 +113,7 @@ layers:
   - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
   - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
-  - {t: ▽, type: trans}
+  - {t: default, h: '$$mdi:toggle-switch$$'}
   - $$mdi:volume-mute$$
   - $$mdi:skip-forward$$
   - F5
@@ -123,7 +123,7 @@ layers:
   - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
   - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
   - $$tabler:brightness-up$$
-  - {t: ▽, type: trans}
+  - {t: right, h: '$$mdi:toggle-switch$$'}
   - $$mdi:volume-plus$$
   - $$mdi:play-pause$$
   - F9
@@ -133,7 +133,7 @@ layers:
   - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
   - {t: '$$mdi:bluetooth-connect$$', s: '4', type: sym_sub_text}
   - $$tabler:brightness-down$$
-  - {t: ▽, type: trans}
+  - {t: left, h: '$$mdi:toggle-switch$$'}
   - $$mdi:volume-minus$$
   - $$mdi:skip-backward$$
   - {type: held}
