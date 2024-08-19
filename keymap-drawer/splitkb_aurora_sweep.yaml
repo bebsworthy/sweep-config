@@ -145,5 +145,7 @@ combos:
   k: '&escape_layer0'
 - p: [30, 20]
   k: {t: left, h: '$$mdi:toggle-switch$$'}
+  l: [default]
 - p: [33, 29]
   k: {t: right, h: '$$mdi:toggle-switch$$'}
+  l: [default]
