@@ -40,6 +40,16 @@
             timeout-ms = <50>;
             layers = <0>;
         };
+
+        toggle_left {
+            bindings = <&tog 2>;
+            key-positions = <30 20>;
+        };
+
+        toggle_right {
+            bindings = <&tog 1>;
+            key-positions = <33 29>;
+        };
     };
 
     conditional_layers {
@@ -65,28 +75,28 @@
 
         right_layer {
             bindings = <
-&kp SLASH     &kp N7       &kp N8        &kp N9          &kp MINUS           &kp INSERT       &kp HOME          &kp UP_ARROW      &kp END           &kp CAPSLOCK
-&kp ASTERISK  &ht LALT N4  &ht LCTRL N5  &ht LGUI N6     &ht GLOBE PLUS      &kp PAGE_UP      &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp DEL
-&kp N0        &kp N1       &kp N2        &kp N3          &kp PERIOD          &kp PAGE_DOWN    &kp K_APP         &kp SCROLLLOCK    &trans            &trans
+&kp SLASH     &kp N7       &kp N8        &kp N9       &kp MINUS         &kp INSERT     &kp HOME        &kp UP_ARROW    &kp END          &kp CAPSLOCK
+&kp ASTERISK  &ht LALT N4  &ht LCTRL N5  &ht LGUI N6  &ht GLOBE PLUS    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DEL
+&kp N0        &kp N1       &kp N2        &kp N3       &kp PERIOD        &kp PAGE_DOWN  &kp K_APP       &kp SCROLLLOCK  &trans           &trans
 &trans        &trans                                                                                                   &trans           &trans
             >;
         };
 
         left_layer {
             bindings = <
-&kp EXCL  &kp AT         &kp HASH        &kp DLLR        &kp PRCNT            &kp CARET       &kp AMPS           &kp ASTRK        &kp GRAVE         &kp TILDE
-&kp DQT   &ht LALT LBKT  &ht LCTRL LBRC  &ht LGUI LPAR   &ht GLOBE LESS_THAN  &ht GLOBE FSLH  &ht RGUI MINUS     &ht RCTRL EQUAL  &ht RALT COLON    &kp SEMI
-&kp SQT   &kp RBKT       &kp RBRC        &kp RPAR        &kp GT               &kp BSLH        &kp UNDER          &kp PLUS         &kp PIPE          &kp QMARK
-&trans    &trans                                                                          &trans     &trans
+&kp EXCL  &kp AT         &kp HASH        &kp DLLR       &kp PRCNT              &kp CARET       &kp AMPS        &kp ASTRK        &kp GRAVE       &kp TILDE
+&kp DQT   &ht LALT LBKT  &ht LCTRL LBRC  &ht LGUI LPAR  &ht GLOBE LESS_THAN    &ht GLOBE FSLH  &ht RGUI MINUS  &ht RCTRL EQUAL  &ht RALT COLON  &kp SEMI
+&kp SQT   &kp RBKT       &kp RBRC        &kp RPAR       &kp GT                 &kp BSLH        &kp UNDER       &kp PLUS         &kp PIPE        &kp QMARK
+&trans    &trans                                                                                                                &trans          &trans
             >;
         };
 
         tri_layer {
             bindings = <
-&kp F1    &kp F2        &kp F3          &kp F4           &bt BT_SEL 0        &bt BT_SEL 2     &out OUT_TOG       &kp C_NEXT       &kp C_MUTE        &to 0  
-&kp F5    &ht LALT F6   &ht LCTRL F7    &ht LGUI F8      &bt BT_SEL 1        &bt BT_SEL 3     &ht RGUI C_BRI_UP  &ht RCTRL C_PP   &ht RALT C_VOL_UP &to 1  
-&kp F9    &kp F10       &kp F11         &kp F12          &bt BT_CLR          &bt BT_SEL 4     &kp C_BRI_DEC      &kp C_PREV       &kp C_VOL_DN      &to 2
-&trans    &trans                                                                                                         &trans        &trans
+&kp F1  &kp F2       &kp F3        &kp F4       &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG       &kp C_NEXT      &kp C_MUTE         &to 0
+&kp F5  &ht LALT F6  &ht LCTRL F7  &ht LGUI F8  &bt BT_SEL 1    &bt BT_SEL 3  &ht RGUI C_BRI_UP  &ht RCTRL C_PP  &ht RALT C_VOL_UP  &to 1
+&kp F9  &kp F10      &kp F11       &kp F12      &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC      &kp C_PREV      &kp C_VOL_DN       &to 2
+&trans  &trans                                                                                                   &trans             &trans
             >;
         };
     };
