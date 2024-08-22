@@ -186,4 +186,4 @@ combos:
   l: [default]
 - p: [20, 30, 33, 29]
   k: {t: bt, h: '$$mdi:toggle-switch$$'}
-  l: [bt]
+  l: [default]
