@@ -34,6 +34,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
@@ -60,6 +61,13 @@
             key-positions = <33 29>;
             timeout-ms = <50>;
             layers = <0>;
+        };
+
+        combo_activate_bt_layer {
+            bindings = <&to 4>;
+            key-positions = <20 30 33 29>;
+            require-prior-idle-ms = <100>;
+            layers = <4>;
         };
     };
 
@@ -116,16 +124,16 @@
 &kp F1  &kp F2       &kp F3        &kp F4       &trans    &trans  &trans             &kp C_NEXT      &kp C_MUTE         &to 0
 &kp F5  &ht LALT F6  &ht LCTRL F7  &ht LGUI F8  &trans    &trans  &ht RGUI C_BRI_UP  &ht RCTRL C_PP  &ht RALT C_VOL_UP  &to 1
 &kp F9  &kp F10      &kp F11       &kp F12      &trans    &trans  &kp C_BRI_DEC      &kp C_PREV      &kp C_VOL_DN       &to 2
-&trans  &trans                                                                                      &trans             &trans
+&trans  &trans                                                                                       &trans             &trans
             >;
         };
 
         bt_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG  &trans  &trans       &to 0
-&trans  &trans  &trans  &trans  &bt BT_SEL 1    &bt BT_SEL 3  &trans        &trans  &trans       &to 1
-&trans  &trans  &trans  &trans  &bt BT_CLR      &bt BT_SEL 4  &trans        &trans  &trans       &to 2
-&trans  &trans                                                                      &trans       &trans
+&trans  &trans  &trans  &trans  &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG  &trans  &trans  &to 0
+&trans  &trans  &trans  &trans  &bt BT_SEL 1    &bt BT_SEL 3  &trans        &trans  &trans  &to 1
+&trans  &trans  &trans  &trans  &bt BT_CLR      &bt BT_SEL 4  &trans        &trans  &trans  &to 2
+&trans  &trans                                                                      &trans  &trans
             >;
         };
     };
