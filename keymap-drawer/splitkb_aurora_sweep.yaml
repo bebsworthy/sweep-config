@@ -110,9 +110,9 @@ layers:
   - F2
   - F3
   - F4
-  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
-  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - $$mdi:skip-forward$$
   - $$mdi:volume-mute$$
   - {t: default, h: '$$mdi:toggle-switch$$'}
@@ -120,8 +120,8 @@ layers:
   - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F7, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F8, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
-  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: '$$tabler:brightness-up$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:play-pause$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:volume-plus$$', h: '$$mdi:apple-keyboard-option$$'}
@@ -130,8 +130,8 @@ layers:
   - F10
   - F11
   - F12
-  - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
-  - {t: '$$mdi:bluetooth-connect$$', s: '4', type: sym_sub_text}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - $$tabler:brightness-down$$
   - $$mdi:skip-backward$$
   - $$mdi:volume-minus$$
@@ -140,6 +140,41 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  bt:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: default, h: '$$mdi:toggle-switch$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: right, h: '$$mdi:toggle-switch$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '4', type: sym_sub_text}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: left, h: '$$mdi:toggle-switch$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: '&escape_layer0'
