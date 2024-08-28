@@ -142,8 +142,8 @@ layers:
   - {type: held}
   bt:
   - {t: ▽, type: trans}
-  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
   - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
   - {t: ▽, type: trans}
@@ -153,7 +153,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
-  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -163,6 +162,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
