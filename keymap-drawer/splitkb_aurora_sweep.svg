@@ -514,14 +514,12 @@ rect.held, rect.combo.held {
 </a><use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="540" y="203" height="15" width="15.0" class="combo hold glyph mdi:toggle-switch"/>
 </g>
 <g class="combo combopos-3">
-<path d="M336,207 l-289,-13" class="combo"/>
-<path d="M336,207 l-96,11" class="combo"/>
-<path d="M336,207 l96,11" class="combo"/>
-<path d="M336,207 l289,-13" class="combo"/>
-<rect rx="6" ry="6" x="322" y="194" width="28" height="26" class="combo"/>
+<path d="M28,137 l0,37" class="combo"/>
+<path d="M28,137 l0,-37" class="combo"/>
+<rect rx="6" ry="6" x="14" y="124" width="28" height="26" class="combo"/>
 <a href="#bt">
-<text x="336" y="207" class="combo tap layer-activator">bt</text>
-</a><use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="328" y="203" height="15" width="15.0" class="combo hold glyph mdi:toggle-switch"/>
+<text x="28" y="137" class="combo tap layer-activator">bt</text>
+</a><use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="20" y="133" height="15" width="15.0" class="combo hold glyph mdi:toggle-switch"/>
 </g>
 </g>
 </g>
