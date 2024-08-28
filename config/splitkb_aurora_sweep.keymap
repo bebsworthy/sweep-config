@@ -65,7 +65,7 @@
 
         combo_activate_bt_layer {
             bindings = <&to 4>;
-            key-positions = <20 30 33 29>;
+            key-positions = <20 0 10>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
