@@ -95,7 +95,7 @@
         default_layer {
             bindings = <
 &kp Q        &kp W       &kp E        &kp R       &kp T          &kp Y        &kp U       &kp I        &kp O       &kp P
-&kp A        &ht LALT S  &ht LCTRL D  &ht LGUI F  &ht GLOBE G    &ht GLOBE H  &ht RGUI J  &ht RCTRL K  &ht RALT L  &bspc_del
+&ht GLOBE A  &ht LCTRL S  &ht LALT D  &ht LGUI F  &kp G    &ht GLOBE H  &ht RGUI J  &ht RALT K   &ht RCTRL L  &bspc_del
 &kp Z        &kp X       &kp C        &kp V       &kp B          &kp N        &kp M       &kp COMMA    &kp DOT     &kp ENTER
 &lt LEF TAB  &kp LSHIFT                                                                                &kp SPACE   &lt RIG TAB
             >;
@@ -104,7 +104,7 @@
         right_layer {
             bindings = <
 &kp SLASH     &kp N7       &kp N8        &kp N9       &kp MINUS         &kp INSERT     &kp HOME        &kp UP_ARROW    &kp END          &kp CAPSLOCK
-&kp ASTERISK  &ht LALT N4  &ht LCTRL N5  &ht LGUI N6  &ht GLOBE PLUS    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bspc_del
+&ht GLOBE ASTERISK  &ht LCTRL N4  &ht LALT N5  &ht LGUI N6  &kp PLUS    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bspc_del
 &kp N0        &kp N1       &kp N2        &kp N3       &kp PERIOD        &kp PAGE_DOWN  &kp K_APP       &kp SCROLLLOCK  &trans           &trans
 &trans        &trans                                                                                                   &trans           &trans
             >;
@@ -113,7 +113,7 @@
         left_layer {
             bindings = <
 &kp EXCL  &kp AT         &kp HASH        &kp DLLR       &kp PRCNT              &kp CARET       &kp AMPS        &kp ASTRK        &kp GRAVE       &kp TILDE
-&kp DQT   &ht LALT LBKT  &ht LCTRL LBRC  &ht LGUI LPAR  &ht GLOBE LESS_THAN    &ht GLOBE FSLH  &ht RGUI MINUS  &ht RCTRL EQUAL  &ht RALT COLON  &kp SEMI
+&ht GLOBE DQT   &ht LCTRL LBKT  &ht LALT LBRC  &ht LGUI LPAR  &kp LESS_THAN    &ht GLOBE FSLH  &ht RGUI MINUS  &ht RALT EQUAL  &ht RCTRL COLON  &kp SEMI
 &kp SQT   &kp RBKT       &kp RBRC        &kp RPAR       &kp GT                 &kp BSLH        &kp UNDER       &kp PLUS         &kp PIPE        &kp QMARK
 &trans    &trans                                                                                                                &trans          &trans
             >;
@@ -122,7 +122,7 @@
         tri_layer {
             bindings = <
 &kp F1  &kp F2       &kp F3        &kp F4       &trans    &trans  &trans             &kp C_NEXT      &kp C_MUTE         &to 0
-&kp F5  &ht LALT F6  &ht LCTRL F7  &ht LGUI F8  &trans    &trans  &ht RGUI C_BRI_UP  &ht RCTRL C_PP  &ht RALT C_VOL_UP  &to 1
+&ht GLOBE F5  &ht LCTRL F6  &ht LALT F7  &ht LGUI F8  &trans    &trans  &ht RGUI C_BRI_UP  &ht RALT C_PP   &ht RCTRL C_VOL_UP  &to 1
 &kp F9  &kp F10      &kp F11       &kp F12      &trans    &trans  &kp C_BRI_DEC      &kp C_PREV      &kp C_VOL_DN       &to 2
 &trans  &trans                                                                                       &trans             &trans
             >;
