@@ -11,15 +11,15 @@ layers:
   - I
   - O
   - P
-  - A
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: '$$tabler:world$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: G, h: '$$tabler:world$$'}
+  - G
   - {t: H, h: '$$tabler:world$$'}
   - {t: J, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
   - Z
   - X
@@ -46,11 +46,11 @@ layers:
   - $$mdi:arrow-up$$
   - End
   - CapsL
-  - '*'
-  - {t: '4', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '5', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '*', h: '$$tabler:world$$'}
+  - {t: '4', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: +, h: '$$tabler:world$$'}
+  - +
   - PgUp
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
@@ -81,15 +81,15 @@ layers:
   - '*'
   - '`'
   - '~'
-  - '"'
-  - {t: '[', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '{', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '"', h: '$$tabler:world$$'}
+  - {t: '[', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '{', h: '$$mdi:apple-keyboard-option$$'}
   - {t: (, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: <, h: '$$tabler:world$$'}
+  - <
   - {t: /, h: '$$tabler:world$$'}
   - {t: '-', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '=', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ':', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '=', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ':', h: '$$mdi:apple-keyboard-control$$'}
   - ;
   - ''''
   - ']'
@@ -116,15 +116,15 @@ layers:
   - $$mdi:skip-forward$$
   - $$mdi:volume-mute$$
   - {t: default, h: '$$mdi:toggle-switch$$'}
-  - F5
-  - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F7, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F5, h: '$$tabler:world$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F7, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F8, h: '$$mdi:apple-keyboard-command$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$tabler:brightness-up$$', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:play-pause$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:volume-plus$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:play-pause$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:volume-plus$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: right, h: '$$mdi:toggle-switch$$'}
   - F9
   - F10
